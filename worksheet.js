@@ -31,11 +31,20 @@ const characters = [
 
 //***MAP***
 //1. Get array of all names
+const names = characters.map(c => c.name);
+console.log('names ::>', names);
 //2. Get array of all heights
+const heights = characters.map(c => c.height);
+console.log('heights ::>', heights);
 //3. Get array of objects with just name and height properties
+const nameHeightItems = characters.map(c => ({name: c.name, height: c.height}));
+console.log('nameHeightItems ::>', nameHeightItems);
 //4. Get array of all first names
+const firstNames = characters.map(c => c.name.split(' ')[0]);
+console.log('firstNames ::>', firstNames);
 
 //***REDUCE***
+/*
 //1. Get total mass of all characters
 const totalMass = characters.reduce((acc, c) => acc + c.mass, 0);
 console.log('totalMass ::>', totalMass);
@@ -57,6 +66,7 @@ console.log('charactersByEyeColor ::>', charactersByEyeColor);
 //4. Get total number of characters in all the character names
 const totalNameCharacters = characters.reduce((acc, c) => acc += c.name.length, 0);
 console.log('totalNameCharacters ::>', totalNameCharacters);
+*/
 
 //***FILTER***
 /*

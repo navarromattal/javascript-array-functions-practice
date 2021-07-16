@@ -4,3 +4,4 @@ Installed the following:
 Task 0001: Filter
 Task 0002: Sort
 Task 0003: Reduce
+Task 0004: Map
