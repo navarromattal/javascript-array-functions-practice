@@ -1,3 +1,5 @@
 Installed the following:
 	* nodemon :: npm install -g nodemon
 		- then in terminal you type "nodemon {filename} :: the nodemon will run everytime you save your changes.
+Task 0001: Filter
+Task 0002: Sort

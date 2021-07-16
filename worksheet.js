@@ -42,6 +42,7 @@ const characters = [
 //4. Get total number of characters in all the character names
 
 //***FILTER***
+/*
 //1. Get characters with mass greater than 100
 const greater100Characters = characters.filter(c => c.mass > 100);
 console.log('greater100Characters ::>', greater100Characters);
@@ -54,12 +55,21 @@ console.log('allMale ::>', allMale);
 //4. Get all female characters
 const allFemale = characters.filter(c => c.gender === 'female');
 console.log('allFemale ::>', allFemale);
+*/
 
 //***SORT***
 //1. Sort by mass
+const byMass = characters.sort((a,b) => a.mass - b.mass);
+console.log('byMass ::>', byMass);
 //2. Sort by height
+const byHeight = characters.sort((a,b) => a.height - b.height);
+console.log('byHeight ::>', byHeight);
 //3. Sort by name
+const byName = characters.sort((a,b) => a.name < b.name ? -1 : 1);
+console.log('byName ::>', byName);
 //4. Sort by gender
+const byGender = characters.sort((a,b) => a.gender < b.gender ? -1 : 1);
+console.log('byGender ::>', byGender);
 
 //***EVERY***
 //1. Does every character have blue eyes?
