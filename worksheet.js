@@ -5,6 +5,7 @@ const characters = [
         mass: 77,
         eye_color: 'blue',
         gender: 'male',
+        isFilipino: true,
     },
     {
         name: 'Darth Vader',
@@ -12,6 +13,7 @@ const characters = [
         mass: 136,
         eye_color: 'yellow',
         gender: 'male',
+        isFilipino: false,
     },
     {
         name: 'Leia Organa',
@@ -19,6 +21,7 @@ const characters = [
         mass: 49,
         eye_color: 'brown',
         gender: 'female',
+        isFilipino: false,
     },
     {
         name: 'Anakin Skywalker',
@@ -26,9 +29,9 @@ const characters = [
         mass: 84,
         eye_color: 'blue',
         gender: 'male',
+        isFilipino: false,
     },
 ];
-
 //***MAP***
 /*
 //1. Get array of all names
@@ -119,6 +122,7 @@ console.log('allMale ::>', allMale);
 */
 
 //***SOME***
+/*
 //1. Is there at least one male character?
 const hasMale = characters.some(c => c.gender === 'male');
 console.log('hasMale ::>', hasMale);
@@ -131,3 +135,14 @@ console.log('hasTallerThan210 ::>', hasTallerThan210);
 //4. Is there at least one character that has mass less than 50?
 const hasMassLess50 = characters.some(c => c.mass < 50);
 console.log('hasMassLess50 ::>', hasMassLess50);
+*/
+//***FIND***
+//1. Find filipino character?
+const filChar = characters.find(c => c.isFilipino);
+console.log('filChar ::>', filChar);
+//1. Find character with mass=49?
+const mass49Char = characters.find(c => c.mass === 49);
+console.log('mass49Char ::>', mass49Char);
+//1. Find character with mass=20?
+const mass20Char = characters.find(c => c.mass === 20);
+console.log('mass20Char ::>', mass20Char);
