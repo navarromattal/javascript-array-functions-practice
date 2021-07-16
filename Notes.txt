@@ -3,3 +3,4 @@ Installed the following:
 		- then in terminal you type "nodemon {filename} :: the nodemon will run everytime you save your changes.
 Task 0001: Filter
 Task 0002: Sort
+Task 0003: Reduce
