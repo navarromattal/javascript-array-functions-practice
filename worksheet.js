@@ -30,6 +30,7 @@ const characters = [
 ];
 
 //***MAP***
+/*
 //1. Get array of all names
 const names = characters.map(c => c.name);
 console.log('names ::>', names);
@@ -42,6 +43,7 @@ console.log('nameHeightItems ::>', nameHeightItems);
 //4. Get array of all first names
 const firstNames = characters.map(c => c.name.split(' ')[0]);
 console.log('firstNames ::>', firstNames);
+*/
 
 //***REDUCE***
 /*
@@ -102,9 +104,17 @@ console.log('byGender ::>', byGender);
 
 //***EVERY***
 //1. Does every character have blue eyes?
+const allBlueEyes = characters.every(c => c.eye_color === 'blue');
+console.log('allBlueEyes ::>', allBlueEyes);
 //2. Does every character have mass more than 40?
+const allMore40 = characters.every(c => c.mass > 40);
+console.log('allMore40 ::>', allMore40);
 //3. Is every character shorter than 200?
+const all200Shorter = characters.every(c => c.height < 200);
+console.log('all200Shorter ::>', all200Shorter);
 //4. Is every character male?
+const allMale = characters.every(c => c.gender === 'male');
+console.log('allMale ::>', allMale);
 
 //***SOME***
 //1. Is there at least one male character?
