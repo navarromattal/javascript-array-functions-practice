@@ -137,6 +137,7 @@ const hasMassLess50 = characters.some(c => c.mass < 50);
 console.log('hasMassLess50 ::>', hasMassLess50);
 */
 //***FIND***
+/*
 //1. Find filipino character?
 const filChar = characters.find(c => c.isFilipino);
 console.log('filChar ::>', filChar);
@@ -146,3 +147,13 @@ console.log('mass49Char ::>', mass49Char);
 //1. Find character with mass=20?
 const mass20Char = characters.find(c => c.mass === 20);
 console.log('mass20Char ::>', mass20Char);
+*/
+
+/* WHEN PASSING METHOD TO MAP - ISSUE*/
+/*
+console.clear();
+const strings = ['1','7','11'];
+console.log('strings:', strings);
+console.log('numbers:', strings.map(parseInt));
+console.log('numbers:', strings.map(s => parseInt(s)));
+*/

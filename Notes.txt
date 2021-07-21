@@ -8,3 +8,4 @@ Task 0004: Map
 Task 0005: Every
 Task 0006: Some
 Task 0007: Find
+Task 0008: Map issue when passing method. ['1','7','11'].map(parseInt) yields [1, Nan, 3]
